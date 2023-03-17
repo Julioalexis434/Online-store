@@ -1,17 +1,15 @@
 import React from "react";
-import Header from "./componens/Header";
-import Main from "./componens/Main";
 import Orders from "./componens/Orders";
 import SideBar from "./componens/SideBar";
-
+import { useState } from "react";
 function App() {
+  const [menu, setmenu] = useState(false);
+  const [showOrders, setShowOrders] = useState(true);
   return (
-    <div className="max-w-[1600px] m-auto">
+    <div>
       <div className="bg-background w-full min-h-screen">
-        <SideBar />
-        <Main />
-        <Header />
-        <Orders />
+        <SideBar menu = {menu} setmenu = {setmenu} setShowOrders ={setShowOrders} />
+        <Orders showOrders = {showOrders} setShowOrders = {setShowOrders} />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { RiSearchLine } from "react-icons/ri";
 function Header() {
   return (
     <>
-      <div className=" p-2 md:p-4  flex flex-col md:flex-row md:justify-between">
+      <div className=" p-2 flex flex-col md:flex-row md:justify-between">
         {/**Header */}
         <div className="p-4">
           <h1 className="text-2xl font-bold text-gray-200">Riverside Flamez</h1>
