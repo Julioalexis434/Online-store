@@ -1,12 +1,16 @@
 import React from "react";
 import OrdersProduct from "./shared/OrdersProduct";
-import {RiCloseFill} from "react-icons/ri"
+import { RiCloseFill } from "react-icons/ri";
 function Orders(props) {
-const {showOrders, setShowOrders} = props
+  const { showOrders, setShowOrders } = props;
   return (
     <>
       {/**Container */}
-      <div className={ `${showOrders ? 'right-0' : '-right-full'} bg-secundary lg:right-0 fixed top-0 w-full  h-full  lg:w-[400px]  m-b-6 p-4 whitespace-nowrap transition-all`}>
+      <div
+        className={`${
+          showOrders ? "right-0" : "-right-full"
+        } bg-secundary lg:right-0 fixed top-0 w-full  h-full  lg:w-[450px]  m-b-6 p-4 whitespace-nowrap transition-all`}
+      >
         {/**TITLE PRICE */}
         <div className="flex flex-col gap-6">
           <div>
@@ -25,13 +29,18 @@ const {showOrders, setShowOrders} = props
             <button className="px-4 py-2 text-primary border border-gray-500 rounded-lg hover:bg-primary hover:text-white transition-all  ">
               Delivery
             </button>
-            <button className="absolute top-6 right-6 bg-background text-3xl  p-2  rounded-full"  onClick={()=>{setShowOrders(false)}}>
-            <RiCloseFill/>
+            <button
+              className="absolute top-6 right-6 bg-background text-3xl  p-2  rounded-full lg:hidden"
+              onClick={() => {
+                setShowOrders(false);
+              }}
+            >
+              <RiCloseFill />
             </button>
           </div>
 
           {/**TABS */}
-          <div className="grid grid-cols-6 text-white text-xl border-b border-gray-600 pb-4">
+          <div className="grid grid-cols-6 text-white text-xl border-b border-gray-600 pb-4 mb-4">
             <div className="col-span-4">Item</div>
             <div>
               <h1>Qty</h1>
@@ -41,15 +50,53 @@ const {showOrders, setShowOrders} = props
         </div>
 
         {/**Products */}
-        <div className="flex flex-col gap-2 h-[400px] overflow-y-scroll md:h-[65%] lg:h-[450px]">
-          <OrdersProduct />
-          <OrdersProduct />
-          <OrdersProduct />
-          <OrdersProduct />
-          <OrdersProduct />
-          <OrdersProduct />
-          <OrdersProduct />
-          <OrdersProduct />
+        <div className="flex flex-col gap-2 h-[400px] overflow-y-scroll md:h-[65%] lg:h-[400px]">
+          <div>
+            <OrdersProduct
+              title="Coca cola chicken"
+              price="$ 2,69"
+              quantity="1"
+              total="$ 2,69"
+            />
+          </div>
+
+          <div>
+            <OrdersProduct
+          
+              title="Coca cola chicken"
+              price="$ 3,0"
+              quantity="2"
+              total="$ 6"
+            />
+          </div>
+
+          <div>
+            <OrdersProduct
+              title="Coca cola chicken"
+              price="$ 2,69"
+              quantity="1"
+              total="$ 2,69"
+            />
+          </div>
+
+          <div>
+            <OrdersProduct
+              title="Coca cola chicken"
+              price="$ 2,69"
+              quantity="1"
+              total="$ 2,69"
+            />
+          </div>
+
+          <div>
+            <OrdersProduct
+              title="Coca cola chicken"
+              price="$ 2,69"
+              quantity="1"
+              total="$ 2,69"
+            />
+          </div>
+    
         </div>
 
         {/**Pago */}
