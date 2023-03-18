@@ -9,7 +9,7 @@ function Orders(props) {
       <div
         className={`${
           showOrders ? "right-0" : "-right-full"
-        } bg-secundary lg:right-0 fixed top-0 w-full  h-full  lg:w-[450px]  m-b-6 p-4 whitespace-nowrap transition-all`}
+        } bg-secundary lg:right-0 fixed top-0 w-full  h-full  lg:w-[350px]  m-b-6 p-4 whitespace-nowrap transition-all`}
       >
         {/**TITLE PRICE */}
         <div className="flex flex-col gap-6">
@@ -30,7 +30,7 @@ function Orders(props) {
               Delivery
             </button>
             <button
-              className="absolute top-6 right-6 bg-background text-3xl  p-2  rounded-full lg:hidden"
+              className="absolute top-4 right-4 bg-background text-3xl  p-2  rounded-full lg:hidden"
               onClick={() => {
                 setShowOrders(false);
               }}

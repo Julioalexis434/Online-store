@@ -8,18 +8,19 @@ import {
   RiLogoutBoxRLine,
   RiMenu3Fill,
   RiCloseLine,
+  RiMailLine,
 } from "react-icons/ri";
 
 function SideBar(props) {
   const { menu, setmenu, setShowOrders } = props;
   return (
     <>
-      {/**SIDEBAR */}
       <aside
         className={`${
           menu ? "left-0" : "-left-full"
         } bg-secundary h-full  w-24 fixed rounded-tr-xl top-0 rounded-br-xl flex flex-col justify-between transition-all z-50 lg:left-0 md:w-28 lg:w-24 border-r border-gray-700 lg:border-0`}
       >
+        {/**SIDEBAR */}
         <div>
           <ul className="pl-3 flex flex-col gap-3">
             <li className="p-4 mb-4]">
@@ -38,37 +39,37 @@ function SideBar(props) {
               </a>
             </li>
 
-            <li className="p-3 rounded-tl-xl rounded-bl-xl group hover:bg-background ">
+            <li className="p-3 rounded-tl-xl rounded-bl-xl group lg:hover:bg-background ">
               <a
                 href="#"
-                className=" p-4 flex justify-center rounded-lg text-primary group-hover:bg-primary group-hover:text-white"
+                className=" p-4 flex justify-center rounded-lg text-primary lg:group-hover:bg-primary lg:group-hover:text-white"
               >
                 <RiPercentLine className="text-xl" />
               </a>
             </li>
 
-            <li className="p-3 rounded-tl-xl rounded-bl-xl group hover:bg-background ">
+            <li className="p-3 rounded-tl-xl rounded-bl-xl group lg:hover:bg-background ">
               <a
                 href="#"
-                className=" p-4 flex justify-center rounded-lg text-primary group-hover:bg-primary group-hover:text-white"
+                className=" p-4 flex justify-center rounded-lg text-primary lg:group-hover:bg-primary lg:group-hover:text-white"
               >
-                <AiOutlinePieChart className="text-xl" />
+                <RiMailLine className="text-xl" />
               </a>
             </li>
 
-            <li className="p-3 rounded-tl-xl rounded-bl-xl group hover:bg-background ">
+            <li className="p-3 rounded-tl-xl rounded-bl-xl group lg:hover:bg-background ">
               <a
                 href="#"
-                className=" p-4 flex justify-center rounded-lg text-primary group-hover:bg-primary group-hover:text-white"
+                className=" p-4 flex justify-center rounded-lg text-primary lg:group-hover:bg-primary lg:group-hover:text-white"
               >
                 <RiSettings2Line className="text-xl" />
               </a>
             </li>
 
-            <li className="p-3 rounded-tl-xl rounded-bl-xl group hover:bg-background ">
+            <li className="p-3 rounded-tl-xl rounded-bl-xl group lg:hover:bg-background ">
               <a
                 href="#"
-                className=" p-4 flex justify-center rounded-lg text-primary group-hover:bg-primary group-hover:text-white"
+                className=" p-4 flex justify-center rounded-lg text-primary lg:group-hover:bg-primary lg:group-hover:text-white"
               >
                 <RiNotification4Line className="text-xl" />
               </a>
@@ -79,10 +80,10 @@ function SideBar(props) {
         {/*Logout */}
         <div>
           <ul className="pl-3">
-            <li className="p-3 rounded-tl-xl rounded-bl-xl group hover:bg-background ">
+            <li className="p-3 rounded-tl-xl rounded-bl-xl group lg:hover:bg-background ">
               <a
                 href="#"
-                className=" p-4 flex justify-center rounded-lg text-primary group-hover:bg-primary group-hover:text-white"
+                className=" p-4 flex justify-center rounded-lg text-primary lg:group-hover:bg-primary lg:group-hover:text-white"
               >
                 <RiLogoutBoxRLine className="text-xl" />
               </a>
