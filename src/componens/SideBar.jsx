@@ -93,7 +93,7 @@ function SideBar(props) {
       </aside>
 
       {/*NavMovil */}
-      <div className="lg:hidden bg-secundary w-full h-20 fixed bottom-0  rounded-tl-xl  rounded-tr-xl transition-all  border-t border-gray-600 ">
+      <div className="lg:hidden bg-secundary w-full h-20 fixed - m-0.5bottom-2  rounded-tl-xl  rounded-tr-xl transition-all  border-t border-gray-600 ">
         <nav className="h-full text-white flex justify-between  items-center px-2 md:px-8">
           <button href="#" className="text-3xl p-4  text-primary">
             <RiSettings2Line />
