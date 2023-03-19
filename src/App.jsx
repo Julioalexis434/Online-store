@@ -8,7 +8,7 @@ function App() {
   const [showOrders, setShowOrders] = useState(false);
   return (
     <div>
-      <div className="bg-background w-full min-h-screen">
+      <div className="bg-background w-full ">
         <Main />
         <SideBar menu={menu} setmenu={setmenu} setShowOrders={setShowOrders} />
         <Orders showOrders={showOrders} setShowOrders={setShowOrders} />
