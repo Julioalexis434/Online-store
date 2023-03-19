@@ -27,17 +27,17 @@ function Header() {
         {/**TABS */}
         <div className="flex justify-between md:justify-start md:gap-12 text-white border-b border-gray-700 mb-3 ">
           <div className="relative">
-            <h1 className="text-primary py-4 before:w-1/2 before:h-[2px] before:bg-primary before:absolute before:-bottom-[2px]">
+            <h1 className="text-primary py-4 cursor-pointer">
               Hot Dishes
             </h1>
           </div>
-          <div className="relative transition-all hover:text-primary  cursor-pointer before:w-full before:h-[2px] before:bg-primary before:absolute before:-bottom-[2px] before:scale-x-0 hover:before:scale-x-100 before:transition-all before:origin-left">
+          <div className="relative transition-all active:text-primary xl:hover:text-primary cursor-pointer">
             <h1 className=" py-4">Cold Dises</h1>
           </div>
-          <div className="relative transition-all hover:text-primary  cursor-pointer before:w-full before:h-[2px] before:bg-primary before:absolute before:-bottom-[2px] before:scale-x-0 hover:before:scale-x-100 before:transition-all before:origin-left">
+          <div className="relative transition-all active:text-primary xl:hover:text-primary cursor-pointer">
             <h1 className=" py-4">Soup</h1>
           </div>
-          <div className="relative transition-all hover:text-primary  cursor-pointer before:w-full before:h-[2px] before:bg-primary before:absolute before:-bottom-[2px] before:scale-x-0 hover:before:scale-x-100 before:transition-all before:origin-left">
+          <div className="relative transition-all active:text-primary xl:hover:text-primary cursor-pointer">
             <h1 className=" py-4">Grill</h1>
           </div>
         </div>
