@@ -21,6 +21,7 @@ function MainProduct(props) {
         </div>
       </div>
     </>
+   
   );
 }
 
